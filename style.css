@@ -11,6 +11,7 @@ body {
 .hero-right, 
 .information, 
 .information-body,
+.information-body-card,
 .testimonial, 
 .cta {
    display: flex;
@@ -106,13 +107,29 @@ ul {
     flex-direction: column;
 }
 
-.information-header{}
+.information-header{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+}
 
-.information-body{}
+.information-body{
+    gap: 1em;
+}
+
+.information-body-card {
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+}
 
 .information-body-card-image{}
 
-.information-body-card-text{}
+.information-body-card-text{
+    color: #1f2937;
+    font-size: small;
+    text-align: center;
+}
 
 .testimonial {
     flex-direction: column;
