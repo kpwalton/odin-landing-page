@@ -1,5 +1,6 @@
-.body {
-    background-color: aqua;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .container, 
@@ -16,14 +17,40 @@
 }
 
 .container {
+    min-height: 100vh;
     flex-direction: column;
+    background-color: lightgray;
 }
 
 .header {
-    background-color: lightblue;
+    background-color: #1f2937;
+    color: #f9faf8;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .header-links {}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+    padding: 0; */
+  }  
+  
+  a {
+    /* font-size: 22px;
+    background: white;
+    padding: 8px; */
+    text-decoration: none;
+    color: #f9faf8;
+    font-size:smaller;
+  }
 
 .hero-left {
     flex-direction: column;
