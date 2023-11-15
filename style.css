@@ -59,6 +59,10 @@ ul {
     justify-content: space-around;
 }
 
+  a:hover {
+    color: lightblue;
+  }
+
 .hero-left {
     flex-direction: column;
     justify-content: center;
