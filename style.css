@@ -24,11 +24,39 @@ body {
     
 }
 
-.header {
+.header-container,
+.hero-container {
     background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+}
+
+.information-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-container{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-container {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    
     color: #f9faf8;
     justify-content: space-around;
     align-items: center;
+    /* max-width: 80%; */
+    flex-basis: 80%;
+    border: 5px solid red;
 }
 
 .header-logo {
@@ -55,10 +83,12 @@ ul {
   }
 
 .hero {
-    background-color: #1F2937;
+    /* max-width: 80%; */
     padding: 100px 0px;
     gap: 1em;
     justify-content: space-around;
+    flex-basis: 80%;
+    border: 5px solid red;
 }
 
   a:hover {
@@ -104,9 +134,15 @@ ul {
 }
 
 .information {
-    background-color: white;
+    
     flex-direction: column;
-    padding: 80px;
+    /* padding-top: 20px; */
+    max-width: 70%;
+    /* align-content: space-between; */
+    /* justify-content: space-between; */
+    flex-basis: 70%;
+    border: 5px solid red;
+
 }
 
 .information-header{
@@ -114,14 +150,17 @@ ul {
     font-size: 36px;
     font-weight: 800;
     text-align: center;
+    padding: 30px;
 }
 
 .information-body{
-    padding: 80px;
+    /* padding: 80px; */
     gap: 1em;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-content: space-between;
     flex-wrap: wrap;
     /* max-width: 80%; */
+    padding-bottom: 100px;
 }
 
 .information-body-card {
@@ -131,7 +170,8 @@ ul {
 }
 
 .information-body-card-image img{
-    max-width: 150px;
+    /* max-width: 150px; */
+    min-width: 150px;
     height: auto;
     border-radius: 30px;
     border: 5px solid #3882f6;
@@ -146,12 +186,13 @@ ul {
 
 .testimonial {
     flex-direction: column;
-    background-color: #e5e7eb;
+    
     color: #1f2937;
     align-items: center;
     justify-content: center;
-    /* max-width: 80%; */
-    padding: 50px 200px;
+    flex-basis: 70%;
+    border: 5px solid red;
+    /* padding: 50px 200px; */
 
 }
 
@@ -170,7 +211,11 @@ ul {
 }
 
 .cta {
-    background-color: lightblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #3882f6;
+    flex-basis: 80%;
+    border: 5px solid red;
 }
 
 .cta-left {
