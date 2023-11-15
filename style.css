@@ -60,9 +60,15 @@ ul {
     flex-direction: column;
 }
 
-.hero-left-header {}
+.hero-left-header {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 800;
+}
 
-.hero-left-content {}
+.hero-left-content {
+    color: #f9faf8;
+}
 
 .hero-left-button {}
 
