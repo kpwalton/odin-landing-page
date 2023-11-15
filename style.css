@@ -1,0 +1,81 @@
+.body {
+    background-color: aqua;
+}
+
+.container, 
+.header, 
+.header-links, 
+.hero, 
+.hero-left, 
+.hero-right, 
+.information, 
+.information-body,
+.testimonial, 
+.cta {
+   display: flex;
+}
+
+.container {
+    flex-direction: column;
+}
+
+.header {
+    background-color: lightblue;
+}
+
+.header-links {}
+
+.hero-left {
+    flex-direction: column;
+}
+
+.hero-left-header {}
+
+.hero-left-content {}
+
+.hero-left-button {}
+
+.hero-right {}
+
+.information {
+    background-color: lightblue;
+    flex-direction: column;
+}
+
+.information-header{}
+
+.information-body{}
+
+.information-body-card-image{}
+
+.information-body-card-text{}
+
+.testimonial {
+    flex-direction: column;
+}
+
+.testimonial-quote {}
+
+.testimonial-attrib {}
+
+.cta {
+    background-color: lightblue;
+}
+
+.cta-left {
+    flex-direction: column;
+}
+
+.cta-left-header {}
+
+.cta-left-content {}
+
+.cta-right{}
+
+.cta-right-button {}
+
+.footer{}
+
+
+
+
