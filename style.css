@@ -20,7 +20,8 @@ body {
 .container {
     min-height: 100vh;
     flex-direction: column;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    
 }
 
 .header {
@@ -145,11 +146,28 @@ ul {
 
 .testimonial {
     flex-direction: column;
+    background-color: #e5e7eb;
+    color: #1f2937;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 80%; */
+    padding: 50px 200px;
+
 }
 
-.testimonial-quote {}
+.testimonial-quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+   
+    
+}
 
-.testimonial-attrib {}
+.testimonial-attrib {
+    font-weight: 700;
+    align-self: flex-end;
+    
+}
 
 .cta {
     background-color: lightblue;
