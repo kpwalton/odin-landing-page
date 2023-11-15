@@ -118,6 +118,9 @@ ul {
 .information-body{
     padding: 80px;
     gap: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* max-width: 80%; */
 }
 
 .information-body-card {
@@ -127,17 +130,17 @@ ul {
 }
 
 .information-body-card-image img{
-  /* max-width: 100px; */
-  /* height: auto;
-  opacity: 0.1; */
-  border-radius: 30px;
-  border: 5px solid #3882f6;
+    max-width: 150px;
+    height: auto;
+    border-radius: 30px;
+    border: 5px solid #3882f6;
 }
 
 .information-body-card-text{
     color: #1f2937;
     font-size: small;
     text-align: center;
+    max-width: 150px;
 }
 
 .testimonial {
