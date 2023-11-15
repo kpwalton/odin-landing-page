@@ -52,21 +52,54 @@ ul {
     font-size:smaller;
   }
 
+.hero {
+    background-color: #1F2937;
+    padding: 100px 0px;
+    gap: 1em;
+    justify-content: space-around;
+}
+
   a:hover {
     color: lightblue;
   }
 
 .hero-left {
     flex-direction: column;
+    justify-content: center;
+    gap: 1em;
 }
 
-.hero-left-header {}
+.hero-left-header {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 800;
+}
 
-.hero-left-content {}
+.hero-left-content {
+    color: #f9faf8;
+}
 
-.hero-left-button {}
+.hero-left-button {
+  background-color: #3882f6;
+  border: none;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+}
 
 .hero-right {}
+
+.hero-right img {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.1;
+}
 
 .information {
     background-color: lightblue;
