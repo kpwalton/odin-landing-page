@@ -4,15 +4,20 @@ body {
 }
 
 .container, 
+.header-container,
 .header, 
 .header-links, 
+.hero-container,
 .hero, 
 .hero-left, 
 .hero-right, 
+.information-container,
 .information, 
 .information-body,
 .information-body-card,
+.testimonial-container,
 .testimonial, 
+.cta-container,
 .cta {
    display: flex;
 }
@@ -20,26 +25,23 @@ body {
 .container {
     min-height: 100vh;
     flex-direction: column;
-    /* background-color: lightgray; */
+    background-color: white;
     
 }
 
 .header-container,
 .hero-container {
     background-color: #1f2937;
-    display: flex;
     justify-content: center;
 }
 
 .information-container {
     background-color: white;
-    display: flex;
     justify-content: center;
 }
 
 .testimonial-container{
     background-color: #e5e7eb;
-    display: flex;
     justify-content: center;
 }
 
