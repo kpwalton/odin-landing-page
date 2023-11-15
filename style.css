@@ -125,7 +125,11 @@ ul {
     justify-content: center;
 }
 
-.information-body-card-image{}
+.information-body-card-image{
+  max-width: 100px;
+  /* height: auto;
+  opacity: 0.1; */
+}
 
 .information-body-card-text{
     color: #1f2937;
