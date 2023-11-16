@@ -120,7 +120,9 @@ info component
     flex-direction: column;
     color: #1f2937;
     text-align: center;
-    /* justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     
 }
 
@@ -135,18 +137,20 @@ info component
 .info-body{
     display: flex;
     gap: 1em;
-    justify-content:space-between;
+    /* justify-content:space-between; */
     flex-wrap: wrap;
     padding-bottom: 100px;
-    /* justify-content: center; */
+    justify-content: center;
+    border: 5px solid blue;
 
 }
 
 .information-body-card {
+    display: flex;
     flex-direction: column;
-    gap: 100px
-    align-items: center;
+    gap: 1em;
     justify-content: center;
+    align-items: center;
     border: 5px solid green;
 }
 
