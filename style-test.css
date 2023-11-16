@@ -89,22 +89,18 @@ ul {
     gap: 1em;
   }
 
-  .item1, .hero-left {
+  .hero-left {
     flex-grow: 1;
     color: white;
-    border: 5px solid red;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  .item2, .hero-right {
+  .hero-right {
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
-    border: 5px solid red;
-
     display:flex;
     justify-content: flex-end;
   }
@@ -209,7 +205,12 @@ cta component
 /* --------------
 footer component 
 ----------------- */
-
+.component-footer {
+    color: #e5e7eb;
+    font-size: small;
+    font-weight: 600;
+    justify-content: center;
+}
 
 
 /* --------------
