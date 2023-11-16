@@ -59,6 +59,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-basis: 80%;
+    border: 5px solid red;
 }
 
 .header-logo {
@@ -86,50 +87,35 @@ ul {
 
   /* hero component */
 .hero {
-    padding: 60px 0px;
-    gap: 1em;
-    /* justify-content: space-around; */
+    color: #f9faf8;
+    justify-content: space-between;
+    align-items: center;
     flex-basis: 80%;
+    border: 5px solid red;
+    padding: 40px 0px;
+    gap: 1em;
+    flex-wrap: wrap;
 }
 
 
 .hero-left {
-    /* flex-grow: 1; */
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     flex-direction: column;
     justify-content: space-between;
     gap: 1em;
+    border: 5px solid red;
 }
 
 .hero-left-header {
     font-size: 48px;
-    color: #f9faf8;
     font-weight: 800;
 }
 
-.hero-left-content {
-    color: #f9faf8;
-}
-
-/* to do: replace this with the other button  */
-.hero-left-button {
-  background-color: #3882f6;
-  border: none;
-  color: white;
-  padding: 16px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-  width: 100px;
-}
 
 .hero-right {
-    /* flex-grow: 1; */
-    flex: 1 1 100%;
+    /* flex: 1 1 100%; */
     justify-content: flex-end;
+    border: 5px solid red;
 }
 
 .hero-right img {
@@ -137,6 +123,22 @@ ul {
 
 
 }
+
+
+/* to do: replace this with the other button  */
+.hero-left-button {
+    background-color: #3882f6;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100px;
+  }
 
 /* information component */
 .information {  

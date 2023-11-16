@@ -1,0 +1,60 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-header {
+    background-color: #1f2937;
+    padding: 2em;
+}
+
+.container-hero {
+    background-color: #1f2937;
+    padding: 2em;
+}
+
+.container-info {
+    background-color: white
+    padding: 4em;
+}
+
+.container-testimonial {
+    background-color: gray;
+    padding: 4em;
+}
+
+.container-cta {
+    background-color: white;
+    padding: 2em;
+}
+
+.container-footer {
+    background-color: #1f2937;
+    padding: 2em;
+}
+
+.component {
+    display: flex;
+    gap: 1em;
+    /* flex-wrap: wrap; */
+  }
+  
+  .item1 {
+    flex-grow: 1;
+    border: 5px solid red;
+  }
+
+  .item2 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    /* flex-basis: 526px; */
+    flex-basis: auto;
+    border: 5px solid red;
+
+    display:flex;
+    justify-content: flex-end;
+
+  }
+  
