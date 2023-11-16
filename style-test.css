@@ -39,11 +39,46 @@ body {
 
 .component, .component-hero {
     display: flex;
-    gap: 1em;
+    border: 5px solid red; /* for testing */
   }
   
 
+/* header component */
+
+.component-header {
+    color: #f9faf8;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+    padding: 0; 
+  }  
+  
+  a {
+    text-decoration: none;
+    color: #f9faf8;
+    font-size:smaller;
+  }
+
+  a:hover {
+    color: lightblue;
+  }
+
   /* hero component */
+
+  .component-hero {
+    gap: 1em;
+  }
 
   .item1, .hero-left {
     flex-grow: 1;
@@ -68,6 +103,10 @@ body {
   .hero-left-header {
     font-size: 48px;
     font-weight: 800;
+}
+
+.component-info {
+    color: red;
 }
 
 
