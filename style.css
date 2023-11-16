@@ -60,7 +60,6 @@ body {
     align-items: center;
     /* max-width: 80%; */
     flex-basis: 80%;
-    border: 5px solid red;
 }
 
 .header-logo {
@@ -92,7 +91,6 @@ ul {
     gap: 1em;
     /* justify-content: space-around; */
     flex-basis: 80%;
-    border: 5px solid red;
 }
 
 
@@ -101,7 +99,6 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     gap: 1em;
-    border: 5px solid red;
 }
 
 .hero-left-header {
@@ -130,7 +127,6 @@ ul {
 
 .hero-right {
     flex-grow: 1;
-    border: 5px solid red;
 }
 
 .hero-right img {
@@ -143,12 +139,7 @@ ul {
 /* information component */
 .information {  
     flex-direction: column;
-    /* padding-top: 20px; */
-    max-width: 70%;
-    /* align-content: space-between; */
-    /* justify-content: space-between; */
     flex-basis: 70%;
-    border: 5px solid red;
 }
 
 .information-header{
@@ -160,13 +151,11 @@ ul {
 }
 
 .information-body{
-    /* padding: 80px; */
     gap: 1em;
-    /* justify-content: space-between; */
-    align-content: space-between;
+    justify-content:space-between;
     flex-wrap: wrap;
-    /* max-width: 80%; */
     padding-bottom: 100px;
+
 }
 
 .information-body-card {
@@ -176,7 +165,6 @@ ul {
 }
 
 .information-body-card-image img{
-    /* max-width: 150px; */
     min-width: 150px;
     height: auto;
     border-radius: 30px;
@@ -198,9 +186,6 @@ ul {
     align-items: center;
     justify-content: center;
     flex-basis: 70%;
-    border: 5px solid red;
-    /* padding: 50px 200px; */
-
 }
 
 .testimonial-quote {
@@ -220,7 +205,6 @@ ul {
     padding-bottom: 50px;
     background-color: #3882f6;
     flex-basis: 80%;
-    border: 5px solid red;
 }
 
 .cta-left {
