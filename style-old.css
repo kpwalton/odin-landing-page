@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* set up all flex  */
+.container, 
+.header-container,
+.header, 
+.header-links, 
+.hero-container,
+.hero, 
+.hero-left, 
+.hero-right, 
+.information-container,
+.information, 
+.information-body,
+.information-body-card,
+.testimonial-container,
+.testimonial, 
+.cta-container,
+.cta, 
+.cta-right {
+   display: flex;
+}
+
+/* container to stack components */
+.container {
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: white;   
+}
+
+/* set up containers around components */
+.header-container,
+.hero-container {
+    background-color: #1f2937;
+    justify-content: center;
+}
+
+.information-container {
+    background-color: white;
+    justify-content: center;
+}
+
+.testimonial-container{
+    background-color: #e5e7eb;
+    justify-content: center;
+}
+
+.cta-container {  
+    display: flex;
+    justify-content: center;
+}
+
+/* header component */
+.header { 
+    color: #f9faf8;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 80%;
+    border: 5px solid red;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 8px;
+    padding: 0; 
+  }  
+  
+  a {
+    text-decoration: none;
+    color: #f9faf8;
+    font-size:smaller;
+  }
+
+  a:hover {
+    color: lightblue;
+  }
+
+  /* hero component */
+.hero {
+    color: #f9faf8;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 80%;
+    border: 5px solid red;
+    padding: 40px 0px;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+
+.hero-left {
+    /* flex: 1 1 auto; */
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    border: 5px solid red;
+}
+
+.hero-left-header {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+
+.hero-right {
+    /* flex: 1 1 100%; */
+    justify-content: flex-end;
+    border: 5px solid red;
+}
+
+.hero-right img {
+/* to do: I don't want this to squish */
+
+
+}
+
+
+/* to do: replace this with the other button  */
+.hero-left-button {
+    background-color: #3882f6;
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100px;
+  }
+
+/* information component */
+.information {  
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.information-header{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    padding: 30px;
+}
+
+.information-body{
+    gap: 1em;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
+}
+
+.information-body-card {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.information-body-card-image img{
+    min-width: 150px;
+    height: auto;
+    border-radius: 30px;
+    border: 5px solid #3882f6;
+}
+
+.information-body-card-text{
+    color: #1f2937;
+    font-size: small;
+    text-align: center;
+    max-width: 150px;
+}
+
+/* testimonial component */
+.testimonial {
+    flex-direction: column;
+    color: #1f2937;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 70%;
+    padding: 80px;
+}
+
+.testimonial-quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100; 
+}
+
+.testimonial-attrib {
+    font-weight: 700;
+    align-self: flex-end;
+}
+
+/* cta component */
+.cta {
+    margin: 80px 0px;
+    padding: 20px 0px;
+    background-color: #3882f6;
+    flex-basis: 80%;
+    color: white;
+}
+
+.cta-left {
+    flex-direction: column;
+    padding: 50px;
+    flex: 3;
+}
+
+.cta-left-header {
+    font-weight: 800;
+}
+
+.cta-left-content {}
+
+.cta-right{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+
+  .button-cta {
+    background-color: #3882f6;
+    border: 1px solid white;
+    color: white;
+    } 
+
+  .button-hero {
+    background-color: #3882f6;
+    border: none;
+    color: white;
+    } 
+
+
+
+
+
+/* footer component */
+.footer{
+    background-color: #1f2937;
+    color: #e5e7eb;
+    font-size: small;
+    text-align: center;
+    padding: 20px;
+
+}
+
+

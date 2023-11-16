@@ -1,66 +1,61 @@
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-}
-
-/* set up all flex  */
-.container, 
-.header-container,
-.header, 
-.header-links, 
-.hero-container,
-.hero, 
-.hero-left, 
-.hero-right, 
-.information-container,
-.information, 
-.information-body,
-.information-body-card,
-.testimonial-container,
-.testimonial, 
-.cta-container,
-.cta, 
-.cta-right {
-   display: flex;
-}
-
-/* container to stack components */
-.container {
-    min-height: 100vh;
-    flex-direction: column;
-    background-color: white;   
-}
-
-/* set up containers around components */
-.header-container,
-.hero-container {
-    background-color: #1f2937;
-    justify-content: center;
-}
-
-.information-container {
-    background-color: white;
-    justify-content: center;
-}
-
-.testimonial-container{
-    background-color: #e5e7eb;
-    justify-content: center;
-}
-
-.cta-container {  
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-/* header component */
-.header {
-    
+/* --------------
+component containers  
+----------------- */
+
+.container-header {
+    background-color: #1f2937;
+    padding: 0 4em;
+}
+
+.container-hero {
+    background-color: #1f2937;
+    padding: 2em 4em;
+}
+
+.container-info {
+    background-color: white;
+    padding: 0 6em;
+}
+
+.container-testimonial {
+    background-color: #e5e7eb;
+    padding: 6em 10em;
+}
+
+.container-cta {
+    background-color: white;
+    padding: 4em;
+}
+
+.container-footer {
+    background-color: #1f2937;
+    padding: 2em;
+}
+
+/* --------------
+ component base styles
+----------------- */
+.component {
+    display: flex;
+    /* border: 5px solid red;  */
+  }
+  
+/* --------------
+header component 
+----------------- */
+
+.component-header {
     color: #f9faf8;
     justify-content: space-between;
     align-items: center;
-    /* max-width: 80%; */
-    flex-basis: 80%;
 }
 
 .header-logo {
@@ -86,107 +81,89 @@ ul {
     color: lightblue;
   }
 
-  /* hero component */
-.hero {
-    padding: 60px 0px;
+    /* --------------
+    hero component 
+    ----------------- */
+
+  .component-hero {
     gap: 1em;
-    /* justify-content: space-around; */
-    flex-basis: 80%;
-}
+  }
 
-
-.hero-left {
+  .hero-left {
     flex-grow: 1;
+    color: white;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1em;
-}
+  }
 
-.hero-left-header {
+  .hero-right {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display:flex;
+    justify-content: flex-end;
+  }
+
+  .hero-left-header {
     font-size: 48px;
-    color: #f9faf8;
     font-weight: 800;
 }
 
-.hero-left-content {
-    color: #f9faf8;
-}
 
-.hero-left-button {
-  background-color: #3882f6;
-  border: none;
-  color: white;
-  padding: 16px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 8px;
-  width: 100px;
-}
-
-.hero-right {
-    flex-grow: 1;
-}
-
-.hero-right img {
-  /* max-width: 100%;
-  height: auto; */
-  width: 450px;
-  opacity: 0.1;
-}
-
-/* information component */
-.information {  
+/* --------------
+info component 
+----------------- */
+.component-info {
+    display: flex;
     flex-direction: column;
-    flex-basis: 70%;
+    color: #1f2937;
+    text-align: center;
+    justify-content: center;  
 }
 
-.information-header{
-    color: #1f2937;
+.info-header{
     font-size: 36px;
     font-weight: 800;
-    text-align: center;
     padding: 30px;
 }
 
-.information-body{
-    gap: 1em;
-    justify-content:space-between;
+.info-body{
+    display: flex;
     flex-wrap: wrap;
-    padding-bottom: 100px;
-
+    padding-bottom: 8em;
+    justify-content: space-evenly;
 }
 
-.information-body-card {
+.info-card {
+    display: flex;
     flex-direction: column;
     gap: 1em;
+    justify-content: center;
     align-items: center;
 }
 
-.information-body-card-image img{
+.info-card-image img{
     min-width: 150px;
     height: auto;
     border-radius: 30px;
     border: 5px solid #3882f6;
 }
 
-.information-body-card-text{
-    color: #1f2937;
+.info-card-text{
     font-size: small;
-    text-align: center;
     max-width: 150px;
 }
 
-/* testimonial component */
-.testimonial {
+
+/* --------------
+testimonial component 
+----------------- */
+.component-testimonial {
     flex-direction: column;
     color: #1f2937;
     align-items: center;
     justify-content: center;
-    flex-basis: 70%;
-    padding: 80px;
 }
 
 .testimonial-quote {
@@ -200,36 +177,46 @@ ul {
     align-self: flex-end;
 }
 
-/* cta component */
-.cta {
-    margin: 80px 0px;
-    padding: 20px 0px;
+/* --------------
+cta component 
+----------------- */
+
+.component-cta {
     background-color: #3882f6;
-    flex-basis: 80%;
     color: white;
+    align-items: center;
+    padding: 1em 8em;
 }
 
 .cta-left {
     flex-direction: column;
-    padding: 50px;
     flex: 3;
+}
+
+.cta-right{
+    flex: 1;
 }
 
 .cta-left-header {
     font-weight: 800;
+    font-size: 18px;
 }
 
-.cta-left-content {}
-
-.cta-right{
-    flex: 1;
+/* --------------
+footer component 
+----------------- */
+.component-footer {
+    color: #e5e7eb;
+    font-size: small;
+    font-weight: 600;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
 
 
-.button {
+/* --------------
+buttons  
+----------------- */
+button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -239,48 +226,14 @@ ul {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 8px;
-  }
-
-
-  .button-cta {
-    background-color: #3882f6;
-    border: 1px solid white;
     color: white;
-    } 
-
-  .button-hero {
     background-color: #3882f6;
     border: none;
-    color: white;
+    width: 180px;
+  }
+
+  .button-cta {
+    border: 1px solid white;
     } 
 
-
-
-.cta-right-button {
-  /* background-color: #3882f6;
-   border: 1px solid white;
-  color: white;
-  border-radius: 8px;
-  padding: 16px;
-  flex-basis: auto;
   
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 100px;
-  flex: auto; */
-}
-
-/* footer component */
-.footer{
-    background-color: #1f2937;
-    color: #e5e7eb;
-    font-size: small;
-    text-align: center;
-    padding: 20px;
-
-}
-
-
