@@ -201,8 +201,8 @@ ul {
 
 /* cta component */
 .cta {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin: 80px 0px;
+    padding: 50px 0px;
     background-color: #3882f6;
     flex-basis: 80%;
 }
