@@ -40,6 +40,9 @@ component containers
     padding: 2em;
 }
 
+/* --------------
+ component base styles
+----------------- */
 .component {
     display: flex;
     border: 5px solid red; /* for testing */
@@ -185,27 +188,22 @@ cta component
 .component-cta {
     background-color: #3882f6;
     color: white;
+    align-items: center;
+    padding: 1em 8em;
 }
 
 .cta-left {
     flex-direction: column;
-    padding: 50px;
     flex: 3;
+}
+
+.cta-right{
+    flex: 1;
 }
 
 .cta-left-header {
     font-weight: 800;
     font-size: 18px;
-}
-
-.cta-left-content {}
-
-.cta-right{
-    layout: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
 }
 
 /* --------------
