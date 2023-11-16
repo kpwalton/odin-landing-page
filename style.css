@@ -19,7 +19,8 @@ body {
 .testimonial-container,
 .testimonial, 
 .cta-container,
-.cta {
+.cta, 
+.cta-right {
    display: flex;
 }
 
@@ -121,7 +122,7 @@ ul {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 8px;
   width: 100px;
 }
 
@@ -181,11 +182,11 @@ ul {
 /* testimonial component */
 .testimonial {
     flex-direction: column;
-    
     color: #1f2937;
     align-items: center;
     justify-content: center;
     flex-basis: 70%;
+    padding: 80px;
 }
 
 .testimonial-quote {
@@ -201,23 +202,76 @@ ul {
 
 /* cta component */
 .cta {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    margin: 80px 0px;
+    padding: 20px 0px;
     background-color: #3882f6;
     flex-basis: 80%;
+    color: white;
 }
 
 .cta-left {
     flex-direction: column;
+    padding: 50px;
+    flex: 3;
 }
 
-.cta-left-header {}
+.cta-left-header {
+    font-weight: 800;
+}
 
 .cta-left-content {}
 
-.cta-right{}
+.cta-right{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 
-.cta-right-button {}
+
+.button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+
+  .button-cta {
+    background-color: #3882f6;
+    border: 1px solid white;
+    color: white;
+    } 
+
+  .button-hero {
+    background-color: #3882f6;
+    border: none;
+    color: white;
+    } 
+
+
+
+.cta-right-button {
+  /* background-color: #3882f6;
+   border: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  padding: 16px;
+  flex-basis: auto;
+  
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100px;
+  flex: auto; */
+}
 
 /* footer component */
 .footer{
