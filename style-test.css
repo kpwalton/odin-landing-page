@@ -26,8 +26,8 @@ component containers
 }
 
 .container-testimonial {
-    background-color: gray;
-    padding: 6em;
+    background-color: #e5e7eb;
+    padding: 6em 10em;
 }
 
 .container-cta {
@@ -40,7 +40,7 @@ component containers
     padding: 2em;
 }
 
-.component, .component-hero {
+.component {
     display: flex;
     border: 5px solid red; /* for testing */
   }
@@ -160,6 +160,23 @@ info component
 /* --------------
 testimonial component 
 ----------------- */
+.component-testimonial {
+    flex-direction: column;
+    color: #1f2937;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100; 
+}
+
+.testimonial-attrib {
+    font-weight: 700;
+    align-self: flex-end;
+}
 
 /* --------------
 cta component 
