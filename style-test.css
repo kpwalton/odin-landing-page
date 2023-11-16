@@ -6,6 +6,9 @@ body {
     flex-direction: column;
 }
 
+/* --------------
+component containers  
+----------------- */
 
 .container-header {
     background-color: #1f2937;
@@ -19,12 +22,12 @@ body {
 
 .container-info {
     background-color: white;
-    padding: 4em;
+    padding: 6em;
 }
 
 .container-testimonial {
     background-color: gray;
-    padding: 4em;
+    padding: 6em;
 }
 
 .container-cta {
@@ -42,8 +45,9 @@ body {
     border: 5px solid red; /* for testing */
   }
   
-
-/* header component */
+/* --------------
+header component 
+----------------- */
 
 .component-header {
     color: #f9faf8;
@@ -74,7 +78,9 @@ ul {
     color: lightblue;
   }
 
-  /* hero component */
+    /* --------------
+    hero component 
+    ----------------- */
 
   .component-hero {
     gap: 1em;
@@ -105,12 +111,77 @@ ul {
     font-weight: 800;
 }
 
+
+/* --------------
+info component 
+----------------- */
 .component-info {
-    color: red;
+    display: flex;
+    flex-direction: column;
+    color: #1f2937;
+    text-align: center;
+    /* justify-content: center; */
+    
+}
+
+.info-header{
+    /* color: #1f2937; */
+    font-size: 36px;
+    font-weight: 800;
+    /* text-align: center; */
+    padding: 30px;
+}
+
+.info-body{
+    display: flex;
+    gap: 1em;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    /* justify-content: center; */
+
+}
+
+.information-body-card {
+    flex-direction: column;
+    gap: 100px
+    align-items: center;
+    justify-content: center;
+    border: 5px solid green;
+}
+
+.information-body-card-image img{
+    min-width: 150px;
+    height: auto;
+    border-radius: 30px;
+    border: 5px solid #3882f6;
+}
+
+.information-body-card-text{
+    /* color: #1f2937; */
+    font-size: small;
+    /* text-align: center; */
+    max-width: 150px;
 }
 
 
-/* buttons */
+/* --------------
+testimonial component 
+----------------- */
+
+/* --------------
+cta component 
+----------------- */
+
+/* --------------
+footer component 
+----------------- */
+
+
+
+/* --------------
+buttons  
+----------------- */
 .button {
     padding: 15px 32px;
     text-align: center;
