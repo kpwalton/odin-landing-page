@@ -1,5 +1,7 @@
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -40,20 +42,58 @@ body {
     gap: 1em;
   }
   
+
+  /* hero component */
+
   .item1, .hero-left {
     flex-grow: 1;
+    color: white;
     border: 5px solid red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .item2, .hero-right {
     flex-grow: 1;
     flex-shrink: 1;
-    /* flex-basis: 526px; */
     flex-basis: auto;
     border: 5px solid red;
 
     display:flex;
     justify-content: flex-end;
-
   }
+
+  .hero-left-header {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+
+/* buttons */
+.button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+
+  .button-cta {
+    background-color: #3882f6;
+    border: 1px solid white;
+    color: white;
+    } 
+
+  .button-hero {
+    background-color: #3882f6;
+    border: none;
+    color: white;
+    } 
   
