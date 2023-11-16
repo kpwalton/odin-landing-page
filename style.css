@@ -226,16 +226,45 @@ ul {
     flex: 1;
     border: 2px solid red;
     justify-content: center;
+    align-items: center;
 }
 
+
+.button {
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+
+  .button-cta {
+    background-color: #3882f6;
+    border: 1px solid white;
+    color: white;
+    } 
+
+  .button-hero {
+    background-color: #3882f6;
+    border: none;
+    color: white;
+    } 
+
+
+
 .cta-right-button {
-  background-color: #3882f6;
-  border: 1px solid white;
+  /* background-color: #3882f6;
+   border: 1px solid white;
   color: white;
   border-radius: 8px;
   padding: 16px;
   flex-basis: auto;
-  /* 
+  
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -243,8 +272,6 @@ ul {
   cursor: pointer;
   width: 100px;
   flex: auto; */
- 
-
 }
 
 /* footer component */
