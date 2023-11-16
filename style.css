@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+/* set up all flex  */
 .container, 
 .header-container,
 .header, 
@@ -22,13 +23,14 @@ body {
    display: flex;
 }
 
+/* container to stack components */
 .container {
     min-height: 100vh;
     flex-direction: column;
-    background-color: white;
-    
+    background-color: white;   
 }
 
+/* set up containers around components */
 .header-container,
 .hero-container {
     background-color: #1f2937;
@@ -45,16 +47,16 @@ body {
     justify-content: center;
 }
 
-.cta-container {
-    
+.cta-container {  
     display: flex;
     justify-content: center;
 }
 
+/* header component */
 .header {
     
     color: #f9faf8;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* max-width: 80%; */
     flex-basis: 80%;
@@ -66,7 +68,6 @@ body {
     font-weight: 700;
 }
 
-.header-links {}
 
 ul {
     list-style-type: none;
@@ -84,9 +85,9 @@ ul {
     font-size:smaller;
   }
 
+  /* hero component */
 .hero {
-    /* max-width: 80%; */
-    padding: 100px 0px;
+    padding: 60px 0px;
     gap: 1em;
     justify-content: space-around;
     flex-basis: 80%;
@@ -99,7 +100,7 @@ ul {
 
 .hero-left {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1em;
 }
 
@@ -135,8 +136,8 @@ ul {
   opacity: 0.1;
 }
 
-.information {
-    
+/* information component */
+.information {  
     flex-direction: column;
     /* padding-top: 20px; */
     max-width: 70%;
@@ -144,7 +145,6 @@ ul {
     /* justify-content: space-between; */
     flex-basis: 70%;
     border: 5px solid red;
-
 }
 
 .information-header{
@@ -186,6 +186,7 @@ ul {
     max-width: 150px;
 }
 
+/* testimonial component */
 .testimonial {
     flex-direction: column;
     
@@ -201,17 +202,15 @@ ul {
 .testimonial-quote {
     font-size: 36px;
     font-style: italic;
-    font-weight: 100;
-   
-    
+    font-weight: 100; 
 }
 
 .testimonial-attrib {
     font-weight: 700;
     align-self: flex-end;
-    
 }
 
+/* cta component */
 .cta {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -232,6 +231,7 @@ ul {
 
 .cta-right-button {}
 
+/* footer component */
 .footer{
     background-color: #1f2937;
     color: #e5e7eb;
@@ -240,7 +240,5 @@ ul {
     padding: 20px;
 
 }
-
-
 
 
