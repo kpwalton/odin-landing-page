@@ -211,6 +211,7 @@ ul {
 .cta-left {
     flex-direction: column;
     padding: 50px;
+    flex: 3;
 }
 
 .cta-left-header {
@@ -219,7 +220,9 @@ ul {
 
 .cta-left-content {}
 
-.cta-right{}
+.cta-right{
+    flex: 1;
+}
 
 .cta-right-button {
   background-color: #3882f6;
