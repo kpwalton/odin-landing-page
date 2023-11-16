@@ -120,29 +120,20 @@ info component
     flex-direction: column;
     color: #1f2937;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    
+    justify-content: center;  
 }
 
 .info-header{
-    /* color: #1f2937; */
     font-size: 36px;
     font-weight: 800;
-    /* text-align: center; */
     padding: 30px;
 }
 
 .info-body{
     display: flex;
-    gap: 1em;
-    /* justify-content:space-between; */
     flex-wrap: wrap;
     padding-bottom: 100px;
-    justify-content: center;
-    border: 5px solid blue;
-
+    justify-content: space-evenly;
 }
 
 .information-body-card {
@@ -151,7 +142,6 @@ info component
     gap: 1em;
     justify-content: center;
     align-items: center;
-    border: 5px solid green;
 }
 
 .information-body-card-image img{
@@ -162,9 +152,7 @@ info component
 }
 
 .information-body-card-text{
-    /* color: #1f2937; */
     font-size: small;
-    /* text-align: center; */
     max-width: 150px;
 }
 
