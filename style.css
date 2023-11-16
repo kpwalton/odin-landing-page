@@ -213,7 +213,6 @@ ul {
     flex-direction: column;
     padding: 50px;
     flex: 3;
-    border: 2px solid red;
 }
 
 .cta-left-header {
@@ -224,7 +223,6 @@ ul {
 
 .cta-right{
     flex: 1;
-    border: 2px solid red;
     justify-content: center;
     align-items: center;
 }
