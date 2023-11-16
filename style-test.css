@@ -45,7 +45,7 @@ component containers
 ----------------- */
 .component {
     display: flex;
-    border: 5px solid red; /* for testing */
+    /* border: 5px solid red;  */
   }
   
 /* --------------
