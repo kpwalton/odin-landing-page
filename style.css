@@ -54,12 +54,10 @@ body {
 }
 
 /* header component */
-.header {
-    
+.header { 
     color: #f9faf8;
     justify-content: space-between;
     align-items: center;
-    /* max-width: 80%; */
     flex-basis: 80%;
 }
 
@@ -96,7 +94,8 @@ ul {
 
 
 .hero-left {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex: 1 1 auto;
     flex-direction: column;
     justify-content: space-between;
     gap: 1em;
@@ -112,6 +111,7 @@ ul {
     color: #f9faf8;
 }
 
+/* to do: replace this with the other button  */
 .hero-left-button {
   background-color: #3882f6;
   border: none;
@@ -127,14 +127,15 @@ ul {
 }
 
 .hero-right {
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex: 1 1 100%;
+    justify-content: flex-end;
 }
 
 .hero-right img {
-  /* max-width: 100%;
-  height: auto; */
-  width: 450px;
-  opacity: 0.1;
+/* to do: I don't want this to squish */
+
+
 }
 
 /* information component */
@@ -256,22 +257,7 @@ ul {
 
 
 
-.cta-right-button {
-  /* background-color: #3882f6;
-   border: 1px solid white;
-  color: white;
-  border-radius: 8px;
-  padding: 16px;
-  flex-basis: auto;
-  
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 100px;
-  flex: auto; */
-}
+
 
 /* footer component */
 .footer{
