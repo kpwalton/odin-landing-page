@@ -181,11 +181,11 @@ ul {
 /* testimonial component */
 .testimonial {
     flex-direction: column;
-    
     color: #1f2937;
     align-items: center;
     justify-content: center;
     flex-basis: 70%;
+    padding: 80px;
 }
 
 .testimonial-quote {
