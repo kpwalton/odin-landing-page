@@ -91,10 +91,11 @@ ul {
 
   .hero-left {
     flex-grow: 1;
-    color: white;
+    color: #e5e7eb;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 18px;
   }
 
   .hero-right {
@@ -108,6 +109,11 @@ ul {
   .hero-left-header {
     font-size: 48px;
     font-weight: 800;
+    color: #f9faf8;
+}
+
+.hero-left-content {
+    padding: 1em 0;
 }
 
 
@@ -141,6 +147,7 @@ info component
     gap: 1em;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1em;
 }
 
 .info-card-image img{
@@ -175,6 +182,7 @@ testimonial component
 .testimonial-attrib {
     font-weight: 700;
     align-self: flex-end;
+    padding: 1em 0;
 }
 
 /* --------------
